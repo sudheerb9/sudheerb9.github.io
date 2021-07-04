@@ -1,38 +1,110 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.about-div{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex:1;
+  height: 100vh;
+  background-color: #151418;
 }
 
-.App-link {
-  color: #61dafb;
+.about-content{
+  flex: 1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.about-wave{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.svg {
+  position: absolute;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.diamond1 {
+  position: absolute;
+  top: -170px;
+  left: -670px;
+  width: 1000px;
+  height: 1000px;
+  transition: transform 0.25s ease 0s;
+}
+
+.diamond2 {
+  position: absolute;
+  top: 20px;
+  left: 780px;
+  width: 120px;
+  height: 120px;
+  transition: transform 0.25s ease 0s;
+}
+
+.projects-div{
+  display: flex;
+  flex:1;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #fbfbff;
+}
+
+.projects-content{
+  flex: 1;
+}
+
+.projects-wave{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav{
+  display: flex;
+  flex-direction: row;
+  background-color: #151418;
+  margin:0;
+  padding: 5%;
+}
+
+.nav-title{
+  display: flex;
+  flex: 1;
+  background-color: #151418;
+  color: #fbfbff;
+  font-size: 18px;
+  margin: 0;
+}
+
+.nav-links {
+  display: flex;
+  flex: 2;
+  justify-content: space-evenly;
+}
+
+.nav-empty{
+  display: flex;
+  flex: 1;
+}
+
+.nav-link {
+  background-color: #151418;
+  color: #fbfbff;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 400px) {
+  .nav-title{
+    flex:0.5;
+    font-size: 12px;
   }
-  to {
-    transform: rotate(360deg);
+  .nav-links{
+    flex:1;
+    justify-content: space-around;
+  }
+  .nav-link{
+    font-size: 12px;
+  }
+  .nav-empty{
+    flex:0.5;
   }
 }
