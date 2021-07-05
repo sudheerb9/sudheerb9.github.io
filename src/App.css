@@ -12,6 +12,7 @@
 
 .about-wave{
   display: flex;
+  
   justify-content: flex-end;
 }
 
@@ -26,15 +27,26 @@
   position: absolute;
   top: -170px;
   left: -670px;
-  width: 1000px;
+  width: 150vh;
   height: 1000px;
   transition: transform 0.25s ease 0s;
+}
+
+@media screen and (max-width: 400px) {
+  .diamond1{
+    position: absolute;
+    top: -170px;
+    left: -670px;
+    width: 125vh;
+    height: 1000px;
+    transition: transform 0.25s ease 0s;
+  }
 }
 
 .diamond2 {
   position: absolute;
   top: 20px;
-  left: 780px;
+  right: 10%;
   width: 120px;
   height: 120px;
   transition: transform 0.25s ease 0s;
