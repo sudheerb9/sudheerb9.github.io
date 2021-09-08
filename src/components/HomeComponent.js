@@ -9,7 +9,7 @@ import Footer from './FooterComponent';
 function Home () {
     return(
         <>
-            
+            <Navbar />
             <About />
             <Projects />
             <Por />

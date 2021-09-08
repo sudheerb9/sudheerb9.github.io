@@ -1,18 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+/* about */
 .about-div{
   display: flex;
   flex-direction: column;
   flex:1;
+  margin-top: -15vh;
   height: 100vh;
   background-color: #151418;
 }
 
 .about-content{
   flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-top: 12%;
+  z-index: 10;
 }
 
 .about-wave{
   display: flex;
-  
   justify-content: flex-end;
 }
 
@@ -52,6 +59,67 @@
   transition: transform 0.25s ease 0s;
 }
 
+.diamond3 {
+  position: absolute;
+  top: 40%;
+  right: 5%;
+  width: 200px;
+  height: 200px;
+  transition: transform 0.25s ease 0s;
+}
+
+.diamond4 {
+  position: absolute;
+  top: 10%;
+  right: 65%;
+  width: 80px;
+  height: 80px;
+  transition: transform 0.25s ease 0s;
+}
+
+.diamond6 {
+  position: absolute;
+  top: 67%;
+  right: 48%;
+  width: 140px;
+  height: 140px;
+  transition: transform 0.25s ease 0s;
+}
+
+.about-para{
+  flex: 0.5;
+  display: block;
+  padding-left: 10%;
+}
+
+.about-pic{
+  flex: 0.5;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.about-para h1 {
+  font-family: 'Poppins', sans-serif;
+  color: #fbfbff;
+  line-height: 0.9rem;
+}
+
+.about-para h2{
+  font-family: 'Poppins', sans-serif;
+  color: rgb(119, 119, 121);
+  margin-bottom: 1.4em;
+}
+
+.about-para h3{
+  font-family: 'Poppins', sans-serif;
+  color: #fbfbff;
+  line-height: 0.8rem;
+}
+
+/* about end */
+/* projects */
+
 .projects-div{
   display: flex;
   flex:1;
@@ -69,6 +137,9 @@
   justify-content: flex-end;
 }
 
+/* projects end */
+/* nav */
+
 .nav{
   display: flex;
   flex-direction: row;
@@ -80,15 +151,28 @@
 .nav-title{
   display: flex;
   flex: 1;
-  background-color: #151418;
+  justify-content: center;
+  align-items: center;
   color: #fbfbff;
   font-size: 18px;
   margin: 0;
+  z-index: 10;
+}
+
+.diamond5 {
+  position: absolute;
+  top: 7%;
+  left: 13%;
+  width: 200px;
+  height: 200px;
+  z-index: -10;
+  transition: transform 0.25s ease 0s;
 }
 
 .nav-links {
   display: flex;
-  flex: 2;
+  flex: 1.5;
+  align-items: center;
   justify-content: space-evenly;
 }
 
