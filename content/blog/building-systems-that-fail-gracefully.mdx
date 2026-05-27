@@ -1,0 +1,39 @@
+---
+title: "Building Systems That Fail Gracefully"
+description: "A practical reliability checklist for backend systems before they reach production scale."
+date: "2026-05-20"
+published: true
+tags:
+  - reliability
+  - distributed systems
+---
+
+Most outages are not caused by one catastrophic bug. They usually come from a chain of small assumptions breaking at once.
+
+When I review a backend service, I look for three things first:
+
+## 1) Failure boundaries are explicit
+
+Every external dependency should have clear timeout, retry, and fallback behavior.
+
+```ts
+const controller = new AbortController();
+const timeout = setTimeout(() => controller.abort(), 800);
+
+try {
+  const response = await fetch(url, { signal: controller.signal });
+  return await response.json();
+} finally {
+  clearTimeout(timeout);
+}
+```
+
+## 2) Degradation is intentional
+
+If a non-critical dependency fails, the service should degrade predictably instead of cascading the error path across every request.
+
+## 3) Operational feedback exists
+
+A system is only as reliable as its visibility. Good logs, metrics, and traces are not optional afterthoughts—they are part of the product quality bar.
+
+Reliability work is not glamorous, but it compounds. Small guardrails added early save weeks of incident response later.
