@@ -14,6 +14,7 @@ export type ExperienceEntry = {
   period: string;
   href?: string;
   summary: string;
+  intro?: string;
   highlights?: ExperienceHighlight[];
   sections?: ExperienceSection[];
   techStack?: string[];
@@ -25,18 +26,20 @@ export const experience: ExperienceEntry[] = [
     role: "Software Development Engineer II",
     period: "Jun 2024 - Nov 2025",
     summary:
-      "At Thena, I worked on building backend systems that power our B2B customer support platform. My focus was on designing reliable, event-driven services, improving automation, and enabling seamless customer communication.",
+      "Built workflow orchestration, CRM, notification and customer support systems powering a modern B2B customer support platform. Focused on distributed workflows, event-driven architecture, and platform reliability.",
+    intro:
+      "At Thena, I helped build core platform capabilities across workflow automation, CRM, messaging, notifications, and customer support infrastructure, with a strong focus on reliability and scale.",
     highlights: [
       {
-        title: "Workflow Automation Platform",
+        title: "Workflow Orchestration Platform",
         body: "Designed and built a configurable workflow automation platform using Temporal to orchestrate complex event-driven workflows with DAG dependencies, retries, compensation logic, and conditional execution paths.",
       },
       {
-        title: "CRM & Core Platform Modules",
+        title: "CRM & Customer Context Platform",
         body: "Developed core CRM modules spanning accounts, contacts, activities, and task management, enabling unified customer context and tighter integration with ticketing workflows.",
       },
       {
-        title: "Data Aggregation Layer",
+        title: "Cross-Service Entity Resolution Layer",
         body: "Designed and implemented a cross-service data aggregation layer to resolve entity relationships across microservices, enabling low-latency, unified retrieval of entities across services.",
       },
       {
@@ -48,11 +51,11 @@ export const experience: ExperienceEntry[] = [
         body: "Built SLA and auto-responder features that allow customers to define their own support policies, automate responses, and proactively manage ticket workflows to meet support targets.",
       },
       {
-        title: "Notifications & Inbox",
+        title: "Real-Time Notifications Platform",
         body: "Designed real-time notification system across Slack, email, and in-app channels, enabling faster collaboration and timely updates.",
       },
       {
-        title: "Infrastructure & CI/CD",
+        title: "Platform Infrastructure & Delivery",
         body: "Owned CI/CD and deployment pipelines for gRPC and HTTP services on AWS ECS, using Cloud Map for service discovery and scalable microservice communication.",
       },
       {
@@ -75,13 +78,15 @@ export const experience: ExperienceEntry[] = [
     role: "Software Engineer",
     period: "Jun 2022 - Jun 2024",
     summary:
-      "At Unacademy, I contributed to the Test Prep, UnacademyX, and AirLearn verticals, working as a backend engineer across multiple high-impact products: Compete, Air Learn, and UnacademyX.",
+      "Built backend systems across multiple high scale learning products, including recommendation engines, subscription and billing systems, experimentation infrastructure, and real-time competitive learning platforms.",
+    intro:
+      "At Unacademy, I worked across multiple high growth products spanning competitive learning, language learning, and content personalization, building backend systems used by millions of learners.",
     sections: [
       {
         title: "Compete (Test Prep, Gamified Learning)",
         highlights: [
-          "Rebuilt a legacy SQL stored procedure–based question recommendation engine using Bloom filters, significantly improving performance (60% latency reduction) and decoupling it into a standalone microservice.",
-          "Designed and implemented an ELO-based rating system and real-time leaderboards for Compete, a high-traffic 1v1 quiz platform handling 10M+ matches and engaging 1.7M+ users in a year.",
+          "Rebuilt a legacy SQL stored procedure based question recommendation engine using Bloom filters, significantly improving performance (60% latency reduction) and decoupling it into a standalone microservice.",
+          "Designed and implemented an ELO based rating system and real-time leaderboards for Compete, a high-traffic 1v1 quiz platform handling 10M+ matches and engaging 1.7M+ users in a year.",
           "Leveraged serverless architecture (AWS Lambda) to generate shareable user rating cards, enabling over 10K monthly shares.",
         ],
       },
@@ -103,6 +108,6 @@ export const experience: ExperienceEntry[] = [
         ],
       },
     ],
-    techStack: ["Go", "Django", "Redis", "MySQL", "DynamoDB", "Elasticsearch", "AWS"],
+    techStack: ["Go", "Django", "Node.js (Fastify)", "Redis", "MySQL", "DynamoDB", "Elasticsearch", "AWS"],
   },
 ];

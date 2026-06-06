@@ -9,7 +9,12 @@ export default function ProjectsPage() {
   return (
     <Section className="pt-16 sm:pt-24">
       <Container className="max-w-3xl space-y-10">
-        <h1 className="text-3xl font-semibold tracking-tight text-zinc-50">Projects</h1>
+        <header className="space-y-3">
+          <h1 className="text-3xl font-semibold tracking-tight text-zinc-50">Projects</h1>
+          <p className="max-w-2xl text-sm leading-8 text-zinc-400">
+            Selected projects spanning machine learning, distributed systems, and backend engineering.
+          </p>
+        </header>
         <ul>
           {projects.map((project) => (
             <ListRow key={project.title}>

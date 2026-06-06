@@ -11,8 +11,8 @@ export default function ExperiencePage() {
         <header className="space-y-3">
           <h1 className="text-3xl font-semibold tracking-tight text-zinc-50">Experience</h1>
           <p className="max-w-2xl text-sm leading-8 text-zinc-400">
-            Backend engineering across B2B SaaS and high-traffic consumer products — workflow systems, data
-            pipelines, and infrastructure.
+            Four years of backend engineering experience building workflow orchestration platforms, distributed
+            systems, data infrastructure, and consumer products at scale.
           </p>
         </header>
 
@@ -27,7 +27,7 @@ export default function ExperiencePage() {
                 <p className="shrink-0 font-mono text-xs text-zinc-500">{entry.period}</p>
               </div>
 
-              <p className="mt-5 text-sm leading-8 text-zinc-400">{entry.summary}</p>
+              <p className="mt-5 text-sm leading-8 text-zinc-400">{entry.intro ?? entry.summary}</p>
 
               {entry.highlights && entry.highlights.length > 0 && (
                 <ul className="mt-8 space-y-5">

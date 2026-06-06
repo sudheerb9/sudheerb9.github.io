@@ -42,15 +42,16 @@ export default async function Home() {
             <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_11rem] lg:items-start lg:gap-16 xl:grid-cols-[minmax(0,42rem)_11rem]">
               <div className="max-w-3xl space-y-4 text-base leading-8 text-zinc-400">
                 <p className="text-zinc-200">
-                  I am a self-taught backend engineer and a Master&apos;s student in Computer Science at UMass Amherst.
+                  I am a backend engineer with 4 years of experience building distributed systems, workflow
+                  orchestration platforms and backend infrastructure for SaaS and consumer products.
                 </p>
                 <p>
-                  I previously worked at Thena and Unacademy, and I have spent ~3.5 years building reliable production
-                  systems.
+                  Previously, I worked at Thena and Unacademy, where I designed event-driven services,
+                  recommendation systems, automation platforms and backend systems serving millions of users.
                 </p>
                 <p>
-                  I am especially interested in databases, distributed systems, and infrastructure. Outside of
-                  programming, I am a cricket fan and enjoy traveling.
+                  I am currently pursuing a Master&apos;s in Computer Science at UMass Amherst, where I am deepening
+                  my understanding of distributed systems, machine learning and large-scale software systems.
                 </p>
 
                 <div className="flex flex-wrap items-center gap-x-5 gap-y-2 pt-2 text-sm lg:hidden">

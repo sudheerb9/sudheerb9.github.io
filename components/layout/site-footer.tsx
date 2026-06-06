@@ -8,9 +8,12 @@ export function SiteFooter() {
   return (
     <footer className="border-t border-white/[0.05] py-10">
       <Container className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-        <p className="text-xs text-zinc-500">
-          © {new Date().getFullYear()} {siteConfig.name}
-        </p>
+        <div className="flex flex-col gap-1">
+          <p className="text-xs text-zinc-500">{siteConfig.role}</p>
+          <p className="text-xs text-zinc-500">
+            © {new Date().getFullYear()} {siteConfig.name}
+          </p>
+        </div>
         <div className="flex items-center gap-4">
           <Link className="text-xs text-zinc-400 hover:text-zinc-200" href={siteConfig.links.github}>
             GitHub

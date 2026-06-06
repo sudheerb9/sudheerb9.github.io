@@ -3,11 +3,11 @@ export const siteConfig = {
   title: "Sudheer Bulusu",
   description:
     "Backend engineer building distributed systems, databases, and scalable infrastructure.",
-  url: "https://sudheerbulusu.com",
+  url: "https://sudheerb9.github.io",
   ogImage: "/og.png",
-  email: "hello@sudheerbulusu.com",
+  email: "sreedattasudheer@gmail.com",
   location: "Amherst, MA",
-  role: "Backend Engineer",
+  role: "Backend Engineer • Distributed Systems",
   tagline:
     "I build reliable systems — distributed infrastructure, data platforms, and the primitives teams depend on.",
   interests: [
